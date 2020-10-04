@@ -237,8 +237,8 @@ export default {
   name: 'MapComponent',
   data () {
     return {
-      zoom: 13,
-      center: [-73.91857329322053, 40.65467255991021],
+      zoom: 14,
+      center: [-73.9223421321627, 40.66283667299376],
       clickCoordinate: undefined,
       selectedFeatures: [],
       mapCursor: 'default',
