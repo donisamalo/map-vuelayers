@@ -348,7 +348,8 @@ export default {
 </script>
 <style lang="scss">
 .map-component {
-  padding: 20px 50px;
+  padding: 20px 50px 100px;
+  min-width: 768px;
   h3 {
     text-align: center;
     font-weight: bold;
