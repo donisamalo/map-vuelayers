@@ -180,28 +180,6 @@
               <component :is="geometryTypeToCmpName(feature.geometry.type)" v-bind="feature.geometry" />
             </vl-feature>
           </div>
-
-          <!-- add inner source if provided (like vl-source-vector inside vl-source-cluster) -->
-          <component
-            :is="layer.source.source.cmp"
-            v-if="layer.source.source"
-            v-bind="layer.source.source"
-          >
-            <!-- add static features to vl-source-vector if provided -->
-            <div v-if="layer.source.source.staticFeatures && layer.source.source.staticFeatures.length">
-              <vl-feature
-                v-for="feature in layer.source.source.staticFeatures"
-                :id="feature.id"
-                :key="feature.id"
-                :properties="feature.properties"
-              >
-                <vl-style-box>
-                  <vl-style-icon src="https://img.icons8.com/office/50/000000/place-marker.png" :anchor="[0.5, 1]" />
-                </vl-style-box>
-                <component :is="geometryTypeToCmpName(feature.geometry.type)" v-bind="feature.geometry" />
-              </vl-feature>
-            </div>
-          </component>
         </component>
         <!--// vl-source-* -->
       </component>
