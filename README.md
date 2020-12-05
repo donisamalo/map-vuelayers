@@ -1,9 +1,7 @@
 # map-component
 
 ## Link Preview
-```
 https://donisamalo-mapcomponent.netlify.app/
-```
 
 ## Build Setup
 
